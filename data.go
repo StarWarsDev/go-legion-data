@@ -11,7 +11,7 @@ const repoURL = "https://raw.githubusercontent.com/zacharyp/sw-legion-data"
 
 // GetData fetches the latest out/legion-data.json file, parses it and returns a Data struct
 func GetData() (Data, error) {
-	dataURL := repoURL + "/master/out/legion-data.json"
+	dataURL := repoURL + "/master/lib/legion-data.json"
 	var data Data
 	client := http.Client{}
 	resp, err := client.Get(dataURL)
